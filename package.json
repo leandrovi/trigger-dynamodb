@@ -1,5 +1,15 @@
 {
+  "name": "trigger-dynamodb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:leandrovi/trigger-dynamodb.git",
+  "author": "leandrovi <leandrofernandesvieira@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "invoke-local": "sls invoke local -f hero-insert --path requests-mock/hero.insert.json"
+  },
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "aws-sdk": "^2.784.0",
     "uuid": "^8.3.1"
   }
